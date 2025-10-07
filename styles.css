@@ -49,5 +49,7 @@ main {
 
 h1 {
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 5pc; 
+  font-style: italic;
+  text-align: center;
 }
