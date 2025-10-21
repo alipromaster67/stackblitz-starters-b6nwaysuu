@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #004d00;     
-  --secondary-color: #90ee90;   
-  --accent-color: #ffd700;     
-  --background-color: #f9f9f9;  
-  --text-color: #111111;      
+  --primary-color: #004d00;
+  --secondary-color: #90ee90;
+  --accent-color: #ffd700;
+  --background-color: #f9f9f9;
+  --text-color: #111111;
   box-sizing: border-box;
 }
 body {
   margin: 0;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   color: var(--text-color);
   background-color: var(--background-color);
 }
@@ -52,7 +52,7 @@ nav a:hover {
   transform: scale(1.05);
 }
 
-nav a[aria-current='page'] {
+nav a[aria-current="page"] {
   color: white;
   background-color: var(--accent-color);
 }
@@ -73,7 +73,9 @@ h1 {
   text-shadow: 2px 2px 3px var(--accent-color);
 }
 
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   color: var(--primary-color);
   font-weight: bold;
   text-transform: uppercase;
@@ -91,7 +93,8 @@ a:hover {
   color: var(--primary-color);
 }
 
-ul, ol {
+ul,
+ol {
   list-style-type: none;
   padding: 0;
 }
@@ -103,7 +106,12 @@ li {
   border-bottom: 1px dashed var(--secondary-color);
   margin-bottom: 0.2rem;
 }
-main h1, main h2, main h3, main h4, main p, main ul {
+main h1,
+main h2,
+main h3,
+main h4,
+main p,
+main ul {
   display: block;
   width: 100%;
   text-align: center;
@@ -125,7 +133,7 @@ main h1, main h2, main h3, main h4, main p, main ul {
   padding: 1rem;
   flex: 1 1 250px;
   margin: 0.5rem;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
   transition: transform 0.3s ease;
 }
 
@@ -133,4 +141,10 @@ main h1, main h2, main h3, main h4, main p, main ul {
   transform: scale(1.05);
   background-color: var(--accent-color);
   color: white;
+}
+.footer {
+  padding: 15px;
+  background-color: var(--secondary-color);
+  display: flex;
+  justify-content: space-between;
 }
