@@ -147,4 +147,5 @@ main ul {
   background-color: var(--secondary-color);
   display: flex;
   justify-content: space-between;
+  position: relative;
 }
