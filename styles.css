@@ -144,7 +144,7 @@ main ul {
 }
 .footer {
   padding: 15px;
-  background-color: var(--secondary-color);
+  background-color: var(rgb(185, 185, 185));
   display: flex;
   justify-content: space-between;
   position: relative;
