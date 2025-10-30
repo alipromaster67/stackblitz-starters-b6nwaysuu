@@ -149,3 +149,19 @@ main ul {
   justify-content: space-between;
   position: relative;
 }
+
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: left;
+  gap: 5%;
+  margin: 5% auto;
+  max-width: 5%;
+  padding: 5%;
+}
+
+
+
+.text-content {
+  flex: 1;
+}
