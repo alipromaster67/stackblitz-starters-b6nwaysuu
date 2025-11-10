@@ -146,9 +146,10 @@ main ul {
   color: white;
 }
 .footer {
-  padding: 15px;
-  background-color: var(rgb(185, 185, 185));
+  position: sticky;
+  bottom: 0;
+  width: 99%;
   display: flex;
   justify-content: space-between;
-  position: relative;
+  padding: 1rem;
 }
