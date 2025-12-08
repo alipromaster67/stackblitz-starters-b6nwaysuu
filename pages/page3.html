@@ -4,7 +4,8 @@
         <nav>
             <a href="../" >Home</a>
             <a href="/pages/page2.html">Schedule</a>
-            <a href="/pages/page3.html"aria-current="page">Page 3</a>
+            <a href="/pages/page3.html"aria-current="page">Contact</a>
+            <a href="/pages/page4.html">Photos</a>
           </nav>
 
     </body>
@@ -17,11 +18,16 @@
     <form name="myform">
         Email: <input type="type" name="email" id="email">
         <input type="text" name="othertext">
-        <input type="submit" name="submitbutton">
+        <input type="submit" onclick="formSubmit()" name="submitbutton">
         <label for="checkbox"> Choose an option</label>
         <div style="display: flex;">
             <input type="checkbox" name="checkbox">
             <div style="margin-left: 0.5rem;">option 1</div>
         </div>
-        
-    </form>
+        <script>
+            function formSubmit() {
+                const nameInput = document.getElementById("email") .value
+                console.log(nameInput);
+                alert("Thanks for submitting, " + nameInput + "!!")
+            }        </script>
+    </form> 
