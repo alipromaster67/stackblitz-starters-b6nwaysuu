@@ -7,7 +7,7 @@
   </head>
   <body>
     <header>
-      Lynn Classical Boys Volleyball
+      Lynn Classical Boys Volleyball        
     </header>    
     <nav>
       <a href="index.html" aria-current="page">Home</a>
@@ -54,6 +54,25 @@
 </main>
   </body>
   <div class="footer">
+    <label>Light mode
+      <input type="checkbox" onchange="togglelightMode()">
+      <script>
+        let lightMode = false;
+        function togglelightMode() {
+          console.log("Light mode initially is " + lightMode);
+          if (lightMode == true) {
+            lightMode = false;
+            document.body.style["color"] = "#000000"
+            document.body.style["textColor"] = "#FFFFFF"
+          } else {
+            lightMode = true;
+            document.body.style["textColor"] = "#000000"
+            document.body.style["color"] = "#FFFFFF"
+          }
+          console.log("Light mode has been changed to " + lightMode);
+        }
+      </script>
+    </label>
   Contact me: 
   <div class= "footerLinks">
     <a href="https://www.maxpreps.com/">  Maxpreps</a>

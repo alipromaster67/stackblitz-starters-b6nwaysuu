@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-    <body>
-        <nav>
-            <a href="../" >Home</a>
-            <a href="/pages/page2.html">Schedule</a>
-            <a href="/pages/page3.html"aria-current="page">Contact</a>
-            <a href="/pages/page4.html">Photos</a>
-          </nav>
+<head>
+    <title>Lynn Classical Boys Volleyball</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <a href="../">Home</a>
+        <a href="/pages/page2.html">Schedule</a>
+        <a href="/pages/page3.html" aria-current="page">Contact</a>
+        <a href="/pages/page4.html">Photos</a>
+    </nav>
 
-    </body>
-    <head>
-        <title>Lynn Classical Boys Volleyball</title>
-        <meta name="description" content="page 3"></meta> 
-        <link rel="stylesheet" href="../styles.css">
+    <form name="myform" onsubmit="formSubmit(); return false;">
+        Email: <input type="email" name="email" id="email">
+        <br>
 
-    </head>
-    <form name="myform">
-        Email: <input type="type" name="email" id="email">
-        <input type="text" name="othertext">
-        <input type="submit" onclick="formSubmit()" name="submitbutton">
-        <label for="checkbox"> Choose an option</label>
-        <div style="display: flex;">
-            <input type="checkbox" name="checkbox">
-            <div style="margin-left: 0.5rem;">option 1</div>
-        </div>
-        <script>
-            function formSubmit() {
-                const nameInput = document.getElementById("email") .value
-                console.log(nameInput);
-                alert("Thanks for submitting, " + nameInput + "!!")
-            }        </script>
-    </form> 
+        Your Message: <input type="text" name="othertext" id="othertext">
+        <br>
+
+        Are you a player or a coach:
+        <br>
+        <input type="checkbox" name="option1"> Player
+        <br>
+        <input type="checkbox" name="option2"> Coach
+        <br>
+
+        <input type="submit" value="Submit">
+    </form>
+
+    <script>
+        function formSubmit() {
+            const email = document.getElementById("email").value;
+            alert("Thanks for submitting, " + email + "!");
+        }
+    </script>
+</body>
+</html>
