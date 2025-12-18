@@ -2,80 +2,83 @@
 <html lang="en">
   <head>
     <title>Lynn Classical Boys Volleyball</title>
-    <meta name="description" content="This is a site for the Lynn Classical Boys Volleyball team"></meta> 
+    <meta name="description" content="This is a site for the Lynn Classical Boys Volleyball team">
     <link rel="stylesheet" href="styles.css">
   </head>
   <body>
     <header>
-      Lynn Classical Boys Volleyball        
-    </header>    
+      Lynn Classical Boys Volleyball
+    </header>
     <nav>
       <a href="index.html" aria-current="page">Home</a>
-      <a href="/pages/page2.html">Schedule</a>
-      <a href="/pages/page3.html">Contact</a>
-      <a href="/pages/page4.html">Photos</a>
+      <a href="pages/page2.html">Schedule</a>
+      <a href="pages/page3.html">Contact</a>
+      <a href="pages/page4.html">Photos</a>
     </nav>
-<main>
-  <h1>Lynn Classical High</h1>
-  <h6>Created by Ali Mejdi</h6>
-  <p>Info and clip site for the Classical Boys Volleyball team.
-    <a href="https://maxpreps.com">Maxpreps</a>
-    <a href="/pages/page2.html">Schedule</a>
-  </p>
-  
-  <h2>Meet the team!</h2>
-  <h3>Varsity</h3>
-  <ul>
-    <li>Riches Won Tep (OH)</li>
-    <li>Jonathan Sovannareach Chan (MB)</li>
-    <li>Hoai Long Pham Nguyen (L)</li>
-    <li>Kenzel Khun Lantano (S)</li>
-  </ul>
-  <h3>Junior Varsity</h3>
-  <ul>
-    <li>Jaytana Truong (bench)</li>
-  </ul>
+    <main>
+      <h1>Lynn Classical High</h1>
+      <h6>Created by Ali Mejdi</h6>
 
-  <h2>Team Highlights</h2>
-  <div class="highlights-grid">
-    <div class="highlight">
-      <h4>Strong Defense</h4>
-      <p>2024 GBL All-Star Libero Long Pham goes wherever the ball goes</p>
+      <p>
+        Info and clip site for the Classical Boys Volleyball team.
+        <a href="https://maxpreps.com">Maxpreps</a>
+        <a href="pages/page2.html">Schedule</a>
+      </p>
+
+      <h2>Meet the team!</h2>
+      <h3>Varsity</h3>
+      <ul>
+        <li>Christopher Leblanc (Head coach)</li>
+        <li>Riches Won Tep (OH)</li>
+        <li>Jonathan Sovannareach Chan (MB)</li>
+        <li>Hoai Long Pham Nguyen (L)</li>
+        <li>Kenzel Khun Lantano (S)</li>
+        <li>Ali Mejdi (OPP)</li>
+        <li>Kayden Veoun (OH)</li>
+      </ul>
+      <h3>Junior Varsity</h3>
+      <ul>
+        <li>Jaytana Truong (bench)</li>
+      </ul>
+
+      <h2>Team Highlights</h2>
+      <div class="highlights-grid">
+        <div class="highlight">
+          <h4>Strong Defense</h4>
+          <p>2024 GBL All-Star Libero Long Pham will not let the ball hit the ground</p>
+        </div>
+        <div class="highlight">
+          <h4>Powerful Spikes</h4>
+          <p>Riches with above national average attacking stats leads the team on offense</p>
+        </div>
+        <div class="highlight">
+          <h4>Team Spirit</h4>
+          <p>The Rams take on any opponent that faces them head on!</p>
+        </div>
+      </div>
+    </main>
+
+    <div class="footer">
+      <label>
+        Light mode
+        <input type="checkbox" onchange="togglelightMode()">
+      </label>
+      <div class="footerLinks">
+        <a href="https://www.maxpreps.com/">Maxpreps</a>
+        <a href="https://www.hudl.com/">Hudl</a>
+      </div>
     </div>
-    <div class="highlight">
-      <h4>Powerful Spikes</h4>
-      <p>Riches with above national average attacking stats leads the team on offense</p>
-    </div>
-    <div class="highlight">
-      <h4>Team Spirit</h4>
-      <p>The Rams take on any oppoent that faces them head on!</p>
-    </div>
-  </div>
-</main>
-  </body>
-  <div class="footer">
-    <label>Light mode
-      <input type="checkbox" onchange="togglelightMode()">
-      <script>
-        let lightMode = false;
-        function togglelightMode() {
-          console.log("Light mode initially is " + lightMode);
-          if (lightMode == true) {
-            lightMode = false;
-            document.body.style["color"] = "#000000"
-            document.body.style["textColor"] = "#FFFFFF"
-          } else {
-            lightMode = true;
-            document.body.style["textColor"] = "#000000"
-            document.body.style["color"] = "#FFFFFF"
-          }
-          console.log("Light mode has been changed to " + lightMode);
+    <script>
+      let lightMode = false;
+      function togglelightMode() {
+        if (lightMode) {
+          lightMode = false;
+          document.body.style.color = "#000000";
+        } else {
+          lightMode = true;
+          document.body.style.color = "#FFFFFF";
         }
-      </script>
-    </label>
-  Contact me: 
-  <div class= "footerLinks">
-    <a href="https://www.maxpreps.com/">  Maxpreps</a>
-    <a href="https://www.hudl.com/"> Hudl</a>
-  </div>
+      }
+    </script>
+  </body>
 </html>
